@@ -599,7 +599,7 @@ const Index = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <Icon name="Home" className="h-6 w-6" />
-                <span className="font-display text-xl font-semibold">ГРЕНАМ</span>
+                <span className="font-display text-xl font-semibold">Stone Tree</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Элитные кухни на заказ. Премиум качество, индивидуальный дизайн.
