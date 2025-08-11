@@ -39,7 +39,7 @@ const Index = () => {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center space-x-2">
             <Icon name="Home" className="h-6 w-6" />
-            <span className="font-display text-xl font-semibold">ГРЕНАМ</span>
+            <span className="font-display text-xl font-semibold">StoneTree</span>
           </div>
           <div className="hidden md:flex items-center space-x-6">
             <a href="#home" className="text-sm font-medium hover:text-accent transition-colors">Главная</a>
