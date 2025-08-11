@@ -487,7 +487,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="font-display text-3xl md:text-4xl font-bold">
-                О компании ГРЕНАМ
+                Stone Tree
               </h2>
               <p className="text-lg text-muted-foreground">
                 Более 15 лет мы создаем кухни премиум-класса, сочетая традиционные 
