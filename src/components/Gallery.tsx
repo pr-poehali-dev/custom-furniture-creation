@@ -76,7 +76,7 @@ const Gallery = () => {
                   <Icon name="Mail" className="h-6 w-6 text-accent" />
                 </div>
                 <h3 className="font-display text-xl font-semibold">Email</h3>
-                <p className="text-muted-foreground">info@grenam.ru</p>
+                <p className="text-muted-foreground">stontree@yandex.ru</p>
                 <p className="text-muted-foreground">sales@grenam.ru</p>
               </CardContent>
             </Card>
