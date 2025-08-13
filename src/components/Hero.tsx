@@ -25,9 +25,46 @@ const Hero = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    
+    try {
+      const emailBody = `
+Новая заявка на выезд замерщика
+
+Контактная информация:
+- Имя: ${formData.name}
+- Телефон: ${formData.phone}
+- Email: ${formData.email}
+
+Детали заявки:
+- Адрес объекта: ${formData.address}
+- Предпочтительное время: ${formData.time}
+- Тип помещения: ${formData.roomType}
+- Планируемый бюджет: ${formData.budget}
+- Комментарий: ${formData.comment}
+
+Дата подачи заявки: ${new Date().toLocaleString('ru-RU')}
+      `.trim();
+
+      const mailtoUrl = `mailto:stontree@yandex.ru?subject=Заявка на замер от ${formData.name}&body=${encodeURIComponent(emailBody)}`;
+      window.open(mailtoUrl, '_blank');
+      
+      alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+      
+      setFormData({
+        name: '',
+        phone: '',
+        email: '',
+        address: '',
+        time: '',
+        roomType: '',
+        budget: '',
+        comment: ''
+      });
+    } catch (error) {
+      alert('Произошла ошибка при отправке заявки. Попробуйте позвонить нам по телефону.');
+    }
   };
 
   return (
